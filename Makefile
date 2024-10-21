@@ -25,3 +25,5 @@ query2:
 query3: 
 	python main.py general "SELECT tc.country, tc.total_beer_servings, u.age_group, u.alcohol_use, u.alcohol_frequency FROM (SELECT country, SUM(beer_servings) AS total_beer_servings FROM zw308_drink GROUP BY country ORDER BY total_beer_servings DESC LIMIT 5) AS tc JOIN zw308_drug_use u ON u.alcohol_use = (SELECT MAX(alcohol_use) FROM zw308_drug_use) ORDER BY tc.total_beer_servings DESC, u.alcohol_use DESC;"
 
+setup:
+	python setup.py develop
