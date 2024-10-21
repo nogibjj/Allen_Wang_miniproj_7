@@ -10,7 +10,6 @@ def handle_arguments(args):
         "action", choices=["create", "read", "update", "delete", "transform", "general"]
     )
     args = parser.parse_args(args[:1])
-
     if args.action == "create":
         parser.add_argument("country")
         parser.add_argument("beer_servings", type=int)
@@ -31,7 +30,6 @@ def handle_arguments(args):
 
     elif args.action == "general":
         parser.add_argument("query")
-
     return parser.parse_args(sys.argv[1:])
 
 
@@ -56,6 +54,7 @@ def main():
     elif args.action == "transform":
         csv_to_db(args.url1,args.url2)
     elif args.action == "general":
+        print(1)
         data = general(args.query)
         if data:
             for row in data:

@@ -15,10 +15,9 @@ jobs:
         run: make install
       - name: Set environment variables
         run: |
-          echo "DB_HOST=${{ secrets.DB_HOST }}" >> $GITHUB_ENV
-          echo "DB_NAME=${{ secrets.DB_NAME }}" >> $GITHUB_ENV
-          echo "DB_USER=${{ secrets.DB_USER }}" >> $GITHUB_ENV
-          echo "DB_PASSWORD=${{ secrets.DB_PASSWORD }}" >> $GITHUB_ENV
+          echo "SERVER_HOSTNAME=${{ secrets.SERVER_HOSTNAME }}" >> $GITHUB_ENV
+          echo "ACCESS_TOKEN=${{ secrets.ACCESS_TOKEN }}" >> $GITHUB_ENV
+          echo "HTTP_PATH=${{ secrets.HTTP_PATH }}" >> $GITHUB_ENV
       - name: transform
         run: make transform
       - name: query3
