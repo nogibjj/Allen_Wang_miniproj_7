@@ -11,8 +11,8 @@ To use `my_tool`, follow these steps:
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/nogibjj/my_tool.git
-   cd my_tool
+    git clone https://github.com/nogibjj/Allen_Wang_miniproj_7.git
+    cd Allen_Wang_miniproj_7
    ```
 
 2. **Install Dependencies**:
@@ -115,4 +115,3 @@ my_tool <action> [<args>]
   ```bash
   my_tool general "SELECT * FROM zw308_drink WHERE country = 'Czech Republic'"
   ```
-```
