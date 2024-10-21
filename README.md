@@ -4,7 +4,7 @@
 
 ## Overview
 
-This project demonstrates how to connect to an external MySQL database, perform complex SQL queries involving joins, aggregation, and sorting, and package the project for execution. Implemented in Python, the project utilizes a Databricks database connection and CI/CD setup for testing and validation. This analysis aims to uncover trends in alcohol consumption and drug use across different age groups and countries. You can find the package user guide [here]((https://github.com/nogibjj/Allen_Wang_miniproj_7/blob/main/user_guide.md))
+This project demonstrates how to connect to an external MySQL database, perform complex SQL queries involving joins, aggregation, and sorting, and package the project for execution. Implemented in Python, the project utilizes a Databricks database connection and CI/CD setup for testing and validation. This analysis aims to uncover trends in alcohol consumption and drug use across different age groups and countries. You can find the package user guide [here](https://github.com/nogibjj/Allen_Wang_miniproj_7/blob/main/user_guide.md)
 
 ## Project Structure
 
